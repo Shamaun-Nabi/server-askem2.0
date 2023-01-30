@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 
 app.post("/", async (req, res) => {
   const { message } = req.body;
-  console.log(message);
+  // console.log(message);
   try {
     const response = await openAi.createCompletion({
       model: "text-davinci-003",
